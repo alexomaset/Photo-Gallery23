@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from datetime as dt
+import datetime as dt
 from .models import *
 # Create your views here.
 def day_photos(request):
