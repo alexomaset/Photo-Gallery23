@@ -1,7 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from datetime as dt
 from .models import *
 # Create your views here.
+def day_photos(request):
+    date = dt.date.today()
+    photos = Image.objects.all()
+
+    return render(request, 'day_photos.html', {"date": date,"images":photos})
 
 def image(request, image_id):
     image = Image.objects.get(id=image_id)
@@ -24,8 +30,12 @@ def search_results(request):
         # context={"message":message}
         return render(request, 'search.html',{"message":message})
 
+def display_images_categories(request):    
+   photos = Image.category(1)
+   return render(request, 'category.html', {"photos":photos})
+
 def location_filter(request):
 
-    images = Image.get_images()
+    photo = Image.location()
     locations = Location.objects.all()
     return render(request,'location.html',{"images":images,"locations":locations})
