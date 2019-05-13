@@ -46,12 +46,12 @@ class Image(models.Model):
     """
     Class that contains details concerning the image itself
     """
-    location = models.ForeignKey(Location)
-    category = models.ForeignKey(Category)
-    photo = models.ImageField(upload_to = 'galley/')
+    
+    photo = models.ImageField(upload_to = 'gallery/')
     name = models.CharField(max_length = 25)
     description = models.TextField()
-    
+    locate = models.ForeignKey(Location)
+    categ = models.ForeignKey(Category)
     # up_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

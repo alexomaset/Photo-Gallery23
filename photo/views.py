@@ -14,9 +14,7 @@ def image(request, image_id):
     return render(request, 'image.html', {'image': image})
 
 def search_results(request):
-    # categories = Category.objects.all()
-    # print(categories)
-
+    
     if 'image' in request.GET and request.GET["image"]:
         search_input = request.GET.get("image")
         images = Image.search_by_category(search_input)
