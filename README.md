@@ -1,10 +1,10 @@
-# Pic-Galore Application
+# Photo-Gallery Application
 
 ## Author
 [Alex Omaset]()
 
 ## Description
-Pic Galore is a django application that allows a user/client to view different categories of photos. When the user clicks on a single photo the image is expanded enabling the user to view details of the photo eg Name of the image, category and location. A user can also search photos using different categories eg Nature,Technology,Vacation,Sports,Music etc.Finally the user can filter photos based on the location.
+Photo-Galler is a django application that allows a user/client to view different categories of photos. When the user clicks on a single photo the image is expanded enabling the user to view details of the photo eg Name of the image, category and location. A user can also search photos using different categories eg Nature,Technology,Vacation,Sports,Music etc.Finally the user can filter photos based on the location.
 ## Behaviour Driven Development
 
 | Behaviour                                                                                 | Input                                                     | Output                                                                            |
@@ -16,7 +16,7 @@ Pic Galore is a django application that allows a user/client to view different c
 | The program should navigate home page when the app name/Home Tag is clicked on the navbar | Click on Pic-Galore/Home Tag  on the navigation bar       | Redirect to the Home page                                                         |
 ### Project Setup instructions
 Use the following commands to use this project.
-- git clone `https://github.com/Antavio/Pic-Galore.git`
+- git clone `https://github.com/alexomaset/Photo-Gallery23.git`
 - install `python 3.6`
 - Install [Postgresql](https://www.postgresql.org/download/)
 - cd Blog-It
