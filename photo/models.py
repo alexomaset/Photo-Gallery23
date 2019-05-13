@@ -27,8 +27,7 @@ class Category(models.Model):
     Class that contains the category details of the image posted
     """
     category = models.CharField(max_length = 15)
-    # description = models.TextField()
-
+    
     def __str__(self):
         return self.category
 
@@ -86,9 +85,10 @@ class Image(models.Model):
         return images
 
     @classmethod
-    def search_by_category(cls,seacrh_input):
-        images = cls.objects.filter(name=name)
+    def search_by_category(cls,search_input):
+        images = cls.objects.filter(categ__category__icontains=search_input)
         return images
+        
     def location (cls, id):
         image = Image.objects.filter(name).all()
         return image

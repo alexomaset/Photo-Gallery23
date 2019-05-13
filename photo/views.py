@@ -19,7 +19,7 @@ def search_results(request):
         search_input = request.GET.get("image")
         images = Image.search_by_category(search_input)
         message = f"{search_input}"
-        print(search_term)
+       
 
         return render(request, 'search.html',{"images":images,"message":message})
 

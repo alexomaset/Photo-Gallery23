@@ -1,28 +1,26 @@
-{%extends 'all-images/base.html'%}
+{%extends 'all-images/base.html'%} {% block content %}
 
- {% block content %}
+<div class="container">
 
- <div class="container">
+  <div class="row">
+    <img src="{image.image_image.url}}" class="img-responsive" alt="">
+  </div>
 
-   <div class="row">
-     <img src="{image.image_image.url}}"  class="img-responsive" alt="">
-   </div>
-
-   <div class="row">
-     <h1 class="text-center">{{image.title}}</h1>
-   </div>
-   <div class="row">
+  <div class="row">
+    <h1 class="text-center">{{image.title}}</h1>
+  </div>
+  <div class="row">
     <h1 class="text-center">{{image.name}}</h1>
-   </div>
+  </div>
 
-   <div class="row">
-     <p>{{image.post}}</p>
-   </div>
+  <div class="row">
+    <p>{{image.post}}</p>
+  </div>
 
-   <div class="row">
-     <p>Posted {{image.pub_date|timesince}} by {{image.photo.name.description}}</p>
-   </div>
+  <div class="row">
+    <p>Posted {{image.pub_date|timesince}} by {{image.photo.name.description}}</p>
+  </div>
 
- </div>
+</div>
 
- {% endblock %}
+{% endblock %}
