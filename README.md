@@ -1,7 +1,7 @@
 # Photo-Gallery Application
 
 ## Author
-[Alex Omaset]()
+[Alex Omaset](https://github.com/)
 
 ## Description
 Photo-Gallery is a django application that allows a user/client to view different categories of photos. When the user clicks on a single photo the image is expanded enabling the user to view details of the photo eg Name of the image, category and location. A user can also search photos using different categories eg Nature,Technology,Vacation,Sports,Music etc.Finally the user can filter photos based on the location.
