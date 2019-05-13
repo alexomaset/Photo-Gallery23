@@ -1,10 +1,14 @@
 {%extends 'all-images/base.html'%} {% block content %}
 
 <div class="container">
-
+  
   <div class="row">
-    <img src="{image.image_image.url}}" class="img-responsive" alt="">
-  </div>
+      <div class="card">
+          <div class="embed-responsive embed-responsive-16by9">
+             <img alt="Card image cap" class="card-img-top embed-responsive-item" src="{image.image_image.url}}" />
+          </div>
+    <!-- <img src="{image.image_image.url}}" class="img-responsive" alt="">
+  </div> -->
 
   <div class="row">
     <h1 class="text-center">{{image.title}}</h1>
